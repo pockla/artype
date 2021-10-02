@@ -18,6 +18,7 @@ function btn() {
   bar.onclick=function(){
     sidebar.classList.remove('unfold')
   };
+};
 
 
 
