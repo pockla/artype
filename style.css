@@ -1,4 +1,4 @@
-
+/*sidebar feature*/
 .sidebar{
   height:100%;
   background-color:white;
@@ -6,22 +6,21 @@
   width: 200px;
   position:fixed;
   box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16),0 2px 10px 0 rgba(34, 34, 34, 0.12);
-  animation:animateleft 0.4s;
   box-sizing: border-box ;
+  left:-200px;
+  transition: left 0.4s ease;
 }
-
 .sidebar .bar{
   font-style: 'Poppin',sans-serief;
-  overflow:visible;
+  overflow: visible;
   user-select: none;
   line-height: 50px;
-  height: 51px;
+  height: 50px;
   color: black;
   text-align: center; 
   width: 100%;
-  color: black;
+  animation:animateleft 0.4s;
 }
-
 nav ul{
   background-color: rgb(202, 199, 199);
   list-style: none;
@@ -30,14 +29,17 @@ nav ul{
   width: 100%;
   padding-left: 0;
   margin-top: 0;
+  position: static;
 }
-
 nav ul li{
   width: 100%;
   line-height: 50px;
-  
 }
-
+nav ul ul{
+  line-height: 50px;
+  border-bottom: none;
+  display: none;
+}
 nav ul li a{
   padding-left: 30px;
   color:black;
@@ -48,20 +50,80 @@ nav ul li a{
   display: flex;
   width:100%;
 }
+nav ul ul li a{
+  padding-left: 60px;
+}
+.triangle{
+  margin:  auto;
+  position: flex;
+  top: 50%;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 12px solid rgb(99, 99, 99);
+  border-bottom: 10px solid transparent;
+  transition: transform 0.4s;
+  }
 
+/*sidebar funtion*/
 nav ul li a:hover{
   color:white;
   background: black;
   border-left-color: rgb(255, 0, 0);
-  position: static;
+}
+.rotate{
+    transform: translate(0,-50%) rotate(-180deg) ;
+  }
+.unfold{
+  display: block;
 }
 
-nav div:hover{
-  color:black;
-  background: white;
-  position: static;
+/*button feature*/
+.btn{
+  position:fixed;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(202, 199, 199);
+  box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+.btn-span{
+  color:rgb(99, 99, 99);
+  font-size: 25px;
+  line-height: 50px;
 }
 
-nav 
+/*button function*/
+.sidebar.unfold{
+  left: 0px;
+}
+.btn-wipe{
+  transform: scale(0);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

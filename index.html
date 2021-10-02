@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>ChenChin</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="金工, 裝飾, Craft, decoration">
-  <meta name="author" content="ChenChin Hsu">
-  <meta name="description" content="Some metal works and such variety material">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-  <link rel='stylesheet' href="style.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-</style>
-  </head>>
-  <body>
-    <!-- Sidebar (hidden by default) -->
-    <nav class="sidebar"  id="mySidebar">
-      
-      <div class="bar">☰</div>
-      <ul>
-        <li><a href="#food" onclick="bar_close()">HOME</a></li>
-        <li><a href="#about" onclick="bar_close()">About</a></li>
-        <li><a href="#about" onclick="bar_close()">Profile</a></li>
-          <ul>
-            <li><a href="#about" onclick="bar_close()">2021</a></li>
-            <li><a href="#about" onclick="bar_close()">2020</a></li>
-            <li><a href="#about" onclick="bar_close()">2019</a></li>
-          </ul>
-        
-        <li><a href="#about" onclick="bar_close()">Exhibitions</a></li>
-        <li><a href="#about" onclick="bar_close()">Goods</a></li>
-        <li><a href="#about" onclick="bar_close()">Contact</a></li>
-        
-        
-        
-        <li><a href="#about" onclick="bar_close()">About</a></li>
-        <li><a href="#about" onclick="bar_close()">About</a></li>
+    <title>ChenChin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="金工, 裝飾, Craft, decoration">
+    <meta name="author" content="ChenChin Hsu">
+    <meta name="description" content="Some metal works and such variety material">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel='stylesheet' href="style.css">
+    <script src="java.js"></script>
+  </head>
 
+   <!-- Sidebar (hidden by default) -->
+  <body>
+    <div class="btn" onclick=btn() id="click" >
+      <span class="btn-span" id="btn-span">☰</span>
+    </div>
+    <nav class="sidebar"  onclick=btn() id="unfold">
+      <div class="bar" id="bar">☰</div>
+      <ul>
+        <li><a href="#food">HOME</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#"  onclick=myFunction() >Profile
+               <span class="triangle" id="triangle"></span>
+            </a>
+          <ul id="profile">
+            <li><a href="#about">2021</a></li>
+            <li><a href="#about">2020</a></li>
+            <li><a href="#about">2019</a></li>
+          </ul>   
+        </li>
+        <li><a href="#about">Exhibitions</a></li>
+        <li><a href="#about">Goods</a></li>
+        <li><a href="#about">Contact</a></li>
       </ul>
-     
     </nav>
 
     <!-- Top menu -->
@@ -155,13 +150,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
         <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
         <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
       </p>
-    </div>
-   </footer>
+    
+  
+    
+    
+    
+    
 
-    <!-- End page content -->
-    </div>
-    // Script to open and close sidebar
-    <script src="java.js"> </script>
 
+    
   </body>
 </html>
