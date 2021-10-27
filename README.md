@@ -1,1 +1,0 @@
-# artype.github.io
