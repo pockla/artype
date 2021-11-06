@@ -1,6 +1,6 @@
 body{
   font-size: 18px;
-  font-family:Helvetica, sans-serif;
+  font-family:"Cormorant+Garamand",Helvetica, sans-serif;
   height: 100%;
   padding: 0px 0px;
   align-items: center;
@@ -23,6 +23,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
+  overflow:visible ;
 }
 .logo{
   width: 400px;
@@ -196,6 +198,7 @@ nav ul ul li a{
   border-top: 12px solid rgb(99, 99, 99);
   border-bottom: 10px solid transparent;
   transition: transform 0.4s;
+  margin-left: 10px;
   }
 
 /*sidebar funtion*/
@@ -260,21 +263,106 @@ nav ul li a:hover{
 /*首頁*/
 @media only screen and (min-width: 1000px) {
   .theme {
-    width: 20% !important;
+    width: 40% !important;
+    float: right;
    }
 }
 .theme{
   max-width: 1200px;
   margin: auto;
   font-size: 24px;
-  width: 66%;
+  width: 80%;
   text-align: left;
   display: block;
-  background: transparent !important;
-  padding: 0px 5vw;
+  background: transparent !important;  
+}
+@media only screen and (max-width: 1000px) {
+  .theme-words {
+    font-size: 18px !important;
+    float: unset !important;
+    font-family: Verdana,BlinkMacSystemFont,-apple-system !important; 
+    border-right: unset !important;
+    border-left: unset !important;
+    border-bottom: solid #4db2ec !important;
+    text-align: center !important;
+    float: unset !important;
+    margin: auto !important;
+    margin-bottom: 8px !important;
+   }
+}
+.theme-words{
+  font-family:Belleza, serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: black; 
+  font-weight: 700;
+  text-align: center;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  border-left: 5px solid #4db2ec;
+  border-right: 5px solid #4db2ec;
+  width: 250px;
+}
+.border-bottom{
+  width: 150px;
+  clear: left;
+  left: 50px;
+  align-items: left;
+  margin-left:10px;
+}
+@media only screen and (max-width: 1000px) {
+  .theme-name {
+    display: none !important;
+   }
+}
+.theme-name{
+  font-size: 32px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: Verdana,BlinkMacSystemFont,-apple-system;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 10px;
+
+}
+@media only screen and (max-width: 1000px) {
+  .theme-q {
+    display:none !important;
+   }
+}
+.theme-q{
+  margin: 20px 20px;
+  font-family: Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+.theme-nm{
+ display: none;
 }
 
-
+@media only screen and (max-width: 1000px) {
+  .theme-nm{
+    font-size: 28px;
+    margin: 60px 0 0 0;
+    text-align: center;
+    font-family: Belleza, serif;
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .theme-p {
+    font-size: 16px !important;
+    margin: 10px 4.5% !important;
+    display: block !important;
+    
+   }
+}
+.theme-p{
+  margin: 20px 10%;
+  display: none;
+  font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Helvetica,Arial,sans-serif;
+}
 
 .footer{
   display: block;
@@ -318,6 +406,12 @@ nav ul li a:hover{
     }
 }
 
+.contact{
+  
+  filter: opacity(80%);
+  width: 100%;
+  height:auto;
+}
 
 
 
@@ -341,6 +435,7 @@ nav ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 @media only screen and (max-width: 1000px) {
   .slider {
@@ -349,8 +444,8 @@ nav ul li a:hover{
     }
 }
 .slider{
-  width: 800px;
-  height: 500px;
+  width: 600px;
+  height: 375px;
   border-radius: 5px;
   display: flex;
 }
@@ -362,7 +457,7 @@ nav ul li a:hover{
 }
 .sliders{
   width: 1000%;
-  height: 500px;
+  height: 375px;
   display: flex;
   overflow: hidden;
 }
@@ -381,7 +476,7 @@ nav ul li a:hover{
     }
 }
 .slide img{
-  width:800px;
+  width:600px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -392,14 +487,14 @@ nav ul li a:hover{
 }
 .navigation-manual{
   position: absolute;
-  width: 800px;
-  margin-top:  510px;
+  width: 600px;
+  margin-top:  382px;
   display: flex;
   justify-content: center;
 }
 
 .manual-btn{
-  border: 2px solid rgb(90, 90, 90);
+  border: 2px solid rgb(165, 165, 165);
   padding: 3px;
   width: 20px;
   height:3px;
@@ -411,7 +506,7 @@ nav ul li a:hover{
   margin-right: 35px;
 }
 .manual-btn:hover{
-  background: rgb(255,100,78);
+  background: rgb(121, 121, 121);
   border: 2px solid rgb(133, 133, 133);
 }
 
@@ -442,8 +537,8 @@ nav ul li a:hover{
   position: absolute;
   display:flex;
   justify-content: center;
-  width: 800px;
-  margin-top: 510px;
+  width: 600px;
+  margin-top: 382px;
 }
 .navigation-auto div:not(:last-child){
   margin-right: 35px;
@@ -459,14 +554,14 @@ nav ul li a:hover{
 }
 
 #rd1:checked ~ .navigation-auto .auto1{
-  background: rgb(255, 100, 78);
+  background: #dbb4b4;
 }
 #rd2:checked ~ .navigation-auto .auto2{
-  background: rgb(255, 100, 78);
+  background: #dbb4b4;
 }
 #rd3:checked ~ .navigation-auto .auto3{
-  background: rgb(255, 100, 78);
+  background: #dbb4b4;
 }
 #rd4:checked ~ .navigation-auto .auto4{
-  background: rgb(255, 100, 78);
+  background: #dbb4b4;
 }
